@@ -24,3 +24,11 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@font-face {
+  font-family: "AllRoundGothic";
+  src: url("/fonts/AllRoundGothic-MediumOblique.woff2") format("woff2");
+  font-weight: 500;
+  font-style: oblique;
+}
