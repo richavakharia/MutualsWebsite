@@ -4,23 +4,23 @@ import Image from "next/image";
 export default function TermsPage() {
   return (
     <main className="relative min-h-screen overflow-hidden text-white">
-      
-      {/* Background */}
       <div className="absolute inset-0 -z-10 bg-[#05070f]" />
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(40,58,160,0.32)_0%,rgba(40,58,160,0.18)_22%,transparent_48%),linear-gradient(180deg,#05070f_0%,#071021_55%,#05070f_100%)]" />
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_bottom_right,rgba(117,39,189,0.14)_0%,transparent_35%)]" />
 
       <div className="mx-auto max-w-3xl px-6 py-12 sm:px-8">
-
-        {/* LOGO BUTTON */}
         <div className="mb-8">
-          <Link href="/" aria-label="Go home">
+          <Link
+            href="/"
+            aria-label="Go home"
+            className="inline-flex items-center justify-center rounded-full border border-white/15 bg-[linear-gradient(90deg,#000000,#071021,#283AA0)] px-4 py-3 shadow-lg transition hover:-translate-y-0.5 hover:opacity-90"
+          >
             <Image
               src="/m-removebg-preview.png"
               alt="Mutuals home"
-              width={48}
-              height={48}
-              className="h-10 w-auto cursor-pointer transition hover:opacity-80"
+              width={40}
+              height={40}
+              className="h-8 w-auto sm:h-9"
               priority
             />
           </Link>
