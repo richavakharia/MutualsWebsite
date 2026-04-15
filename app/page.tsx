@@ -47,7 +47,7 @@ export default function Home() {
     <>
       <main className="relative min-h-screen overflow-hidden text-white">
         <div className="absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-[linear-gradient(120deg,#283AA0_0%,#283AA0_50%,#7527BD_60%,#A3134D_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(120deg,#05070f_0%,#071021_50%,#283AA0_100%)]" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.35)_0%,rgba(0,0,0,0.1)_40%,transparent_70%)]" />
           <div className="absolute left-[-140px] top-[-100px] h-[420px] w-[420px] rounded-full bg-[#283AA0]/70 blur-3xl" />
           <div className="absolute right-[-120px] top-[120px] h-[380px] w-[380px] rounded-full bg-[#283AA0]/60 blur-3xl" />
