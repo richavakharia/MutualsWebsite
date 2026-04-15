@@ -47,13 +47,18 @@ export default function Home() {
     <>
       <main className="relative min-h-screen overflow-hidden text-white">
         <div className="absolute inset-0 -z-10">
+          {/* MAIN BACKGROUND (black → blue) */}
           <div className="absolute inset-0 bg-[linear-gradient(120deg,#05070f_0%,#071021_50%,#283AA0_100%)]" />
+
+          {/* subtle depth overlay */}
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.35)_0%,rgba(0,0,0,0.1)_40%,transparent_70%)]" />
-          <div className="absolute left-[-140px] top-[-100px] h-[420px] w-[420px] rounded-full bg-[#283AA0]/70 blur-3xl" />
-          <div className="absolute right-[-120px] top-[120px] h-[380px] w-[380px] rounded-full bg-[#283AA0]/60 blur-3xl" />
-          <div className="absolute bottom-[-140px] left-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-[#A3134D]/40 blur-3xl" />
-          <div className="absolute left-[10%] top-[40%] h-[240px] w-[240px] rounded-full bg-[#283AA0]/50 blur-3xl" />
-          <div className="absolute right-[12%] bottom-[18%] h-[240px] w-[240px] rounded-full bg-[#A3134D]/30 blur-3xl" />
+
+          {/* blue glow blobs (NO pink) */}
+          <div className="absolute left-[-140px] top-[-100px] h-[420px] w-[420px] rounded-full bg-[#283AA0]/40 blur-3xl" />
+          <div className="absolute right-[-120px] top-[120px] h-[380px] w-[380px] rounded-full bg-[#283AA0]/35 blur-3xl" />
+          <div className="absolute bottom-[-140px] left-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-[#283AA0]/25 blur-3xl" />
+          <div className="absolute left-[10%] top-[40%] h-[240px] w-[240px] rounded-full bg-[#283AA0]/25 blur-3xl" />
+          <div className="absolute right-[12%] bottom-[18%] h-[240px] w-[240px] rounded-full bg-[#283AA0]/20 blur-3xl" />
         </div>
 
         <div className="mx-auto flex min-h-screen max-w-6xl flex-col px-6 py-8 sm:px-8">
@@ -83,7 +88,8 @@ export default function Home() {
             </p>
 
             <div className="relative mt-10">
-              <div className="absolute inset-0 rounded-[3rem] bg-[linear-gradient(180deg,rgba(40,58,160,0.35),rgba(163,19,77,0.35))] blur-3xl" />
+              {/* blue-only glow */}
+              <div className="absolute inset-0 rounded-[3rem] bg-[linear-gradient(180deg,rgba(40,58,160,0.35),rgba(40,58,160,0.15))] blur-3xl" />
 
               <div className="relative mx-auto w-[300px] sm:w-[340px]">
                 <Image
@@ -100,7 +106,7 @@ export default function Home() {
             <div className="mt-10">
               <button
                 onClick={() => setIsWaitlistOpen(true)}
-                className="inline-flex min-w-[220px] items-center justify-center rounded-full bg-[linear-gradient(90deg,#283AA0,#7527BD,#A3134D)] px-7 py-4 text-base font-semibold text-white shadow-lg transition hover:-translate-y-0.5"
+                className="inline-flex min-w-[220px] items-center justify-center rounded-full bg-[linear-gradient(90deg,#05070f,#071021,#283AA0)] px-7 py-4 text-base font-semibold text-white shadow-lg transition hover:-translate-y-0.5"
               >
                 Join the Waitlist
               </button>
@@ -113,7 +119,7 @@ export default function Home() {
                 href="https://www.instagram.com/joinmutuals?igsh=NTc4MTIwNjQ2YQ=="
                 target="_blank"
                 rel="noreferrer"
-                className="text-white transition transform hover:scale-110 hover:text-pink-300"
+                className="text-white transition transform hover:scale-110 hover:text-blue-300"
               >
                 <Instagram size={30} strokeWidth={1.75} />
               </a>
@@ -122,7 +128,7 @@ export default function Home() {
                 href="https://www.linkedin.com/company/mutualssocial/"
                 target="_blank"
                 rel="noreferrer"
-                className="text-white transition transform hover:scale-110 hover:text-pink-300"
+                className="text-white transition transform hover:scale-110 hover:text-blue-300"
               >
                 <Linkedin size={30} strokeWidth={1.75} />
               </a>
@@ -131,7 +137,7 @@ export default function Home() {
                 href="https://www.tiktok.com/@join_mutuals"
                 target="_blank"
                 rel="noreferrer"
-                className="text-white transition transform hover:scale-110 hover:text-pink-300"
+                className="text-white transition transform hover:scale-110 hover:text-blue-300"
               >
                 <SiTiktok size={30} />
               </a>
@@ -158,7 +164,7 @@ export default function Home() {
 
       {isWaitlistOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-6 backdrop-blur-sm">
-          <div className="relative w-full max-w-md rounded-[2rem] border border-white/15 bg-[#283AA0]/90 p-8 text-white shadow-2xl">
+          <div className="relative w-full max-w-md rounded-[2rem] border border-white/15 bg-[#071021]/90 p-8 text-white shadow-2xl">
             <button
               onClick={() => setIsWaitlistOpen(false)}
               className="absolute right-5 top-5 text-white/70 transition hover:text-white"
@@ -182,12 +188,12 @@ export default function Home() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
-                className="w-full rounded-full border border-white/15 bg-white/10 px-5 py-4 text-white placeholder:text-white/45 outline-none transition focus:border-pink-400"
+                className="w-full rounded-full border border-white/15 bg-white/10 px-5 py-4 text-white placeholder:text-white/45 outline-none transition focus:border-blue-400"
               />
 
               <button
                 type="submit"
-                className="rounded-full bg-white px-5 py-4 font-semibold text-[#283AA0] transition hover:opacity-90"
+                className="rounded-full bg-white px-5 py-4 font-semibold text-[#071021] transition hover:opacity-90"
               >
                 Let Me In 👀
               </button>
