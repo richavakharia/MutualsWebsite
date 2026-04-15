@@ -1,12 +1,31 @@
+import Link from "next/link";
+import Image from "next/image";
+
 export default function TermsPage() {
   return (
     <main className="relative min-h-screen overflow-hidden text-white">
-      {/* Background (same as Support) */}
+      
+      {/* Background */}
       <div className="absolute inset-0 -z-10 bg-[#05070f]" />
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(40,58,160,0.32)_0%,rgba(40,58,160,0.18)_22%,transparent_48%),linear-gradient(180deg,#05070f_0%,#071021_55%,#05070f_100%)]" />
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_bottom_right,rgba(117,39,189,0.14)_0%,transparent_35%)]" />
 
       <div className="mx-auto max-w-3xl px-6 py-12 sm:px-8">
+
+        {/* LOGO BUTTON */}
+        <div className="mb-8">
+          <Link href="/" aria-label="Go home">
+            <Image
+              src="/m-removebg-preview.png"
+              alt="Mutuals home"
+              width={48}
+              height={48}
+              className="h-10 w-auto cursor-pointer transition hover:opacity-80"
+              priority
+            />
+          </Link>
+        </div>
+
         <h1 className="text-3xl font-bold mb-4">Terms of Service</h1>
         <p className="text-white/60 mb-6">Last updated: 3/31/2026</p>
 

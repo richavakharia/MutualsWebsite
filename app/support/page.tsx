@@ -1,3 +1,6 @@
+import Link from "next/link";
+import Image from "next/image";
+
 export default function SupportPage() {
   return (
     <main className="relative min-h-screen overflow-hidden text-white">
@@ -6,6 +9,21 @@ export default function SupportPage() {
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_bottom_right,rgba(117,39,189,0.14)_0%,transparent_35%)]" />
 
       <div className="mx-auto max-w-3xl px-6 py-12 sm:px-8">
+        
+        {/* LOGO BUTTON */}
+        <div className="mb-8">
+          <Link href="/" aria-label="Go home">
+            <Image
+              src="/m-removebg-preview.png"
+              alt="Mutuals home"
+              width={48}
+              height={48}
+              className="h-10 w-auto cursor-pointer transition hover:opacity-80"
+              priority
+            />
+          </Link>
+        </div>
+
         <h1 className="mb-4 text-3xl font-bold">Support</h1>
 
         <p className="text-white/80">
