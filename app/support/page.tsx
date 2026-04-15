@@ -9,18 +9,18 @@ export default function SupportPage() {
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_bottom_right,rgba(117,39,189,0.14)_0%,transparent_35%)]" />
 
       <div className="mx-auto max-w-3xl px-6 py-12 sm:px-8">
+
+        {/* LOGO BUTTON */}
         <div className="mb-8">
-          <Link
-            href="/"
-            aria-label="Go home"
-            className="inline-flex items-center justify-center rounded-full border border-white/15 bg-[linear-gradient(90deg,#000000,#071021,#283AA0)] px-4 py-3 shadow-lg transition hover:-translate-y-0.5 hover:opacity-90"
-          >
+          <Link href="/" aria-label="Go home" className="group relative inline-flex h-12 w-12 items-center justify-center">
+            <div className="absolute inset-0 rounded-full bg-[#283AA0]/30 blur-md transition group-hover:bg-[#283AA0]/50" />
+            <div className="absolute inset-0 rounded-full bg-[#071021]/80 border border-white/10" />
             <Image
               src="/m-removebg-preview.png"
               alt="Mutuals home"
-              width={40}
-              height={40}
-              className="h-8 w-auto sm:h-9"
+              width={28}
+              height={28}
+              className="relative z-10 h-6 w-auto transition group-hover:scale-105"
               priority
             />
           </Link>
