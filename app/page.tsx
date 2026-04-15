@@ -64,7 +64,7 @@ export default function Home() {
               </div>
 
               <p className="mt-4 text-sm leading-6 text-white/80 sm:text-base">
-                The IRL social network built for real-world connection.
+                The unified discovery and social platform for real world experiences.
               </p>
             </div>
           </header>
@@ -75,12 +75,9 @@ export default function Home() {
             </p>
 
             <h1 className="mt-4 max-w-4xl text-4xl font-bold tracking-tight sm:text-6xl">
-              Your city. Your people. One place.
+              Find your world.
             </h1>
 
-            <p className="mt-5 max-w-2xl text-base leading-7 text-white/80 sm:text-lg">
-              Discover and create plans, meet new people, and experience your city.
-            </p>
 
             <div className="relative mt-10">
               <div className="absolute inset-0 rounded-[3rem] bg-[linear-gradient(180deg,rgba(40,58,160,0.35),rgba(40,58,160,0.15))] blur-3xl" />
