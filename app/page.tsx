@@ -47,18 +47,13 @@ export default function Home() {
     <>
       <main className="relative min-h-screen overflow-hidden text-white">
         <div className="absolute inset-0 -z-10">
-          {/* MAIN BACKGROUND (black → blue) */}
-          <div className="absolute inset-0 bg-[linear-gradient(120deg,#05070f_0%,#071021_50%,#283AA0_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(135deg,#000000_0%,#000000_45%,#071021_75%,#283AA0_100%)]" />
 
-          {/* subtle depth overlay */}
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.35)_0%,rgba(0,0,0,0.1)_40%,transparent_70%)]" />
-
-          {/* blue glow blobs (NO pink) */}
-          <div className="absolute left-[-140px] top-[-100px] h-[420px] w-[420px] rounded-full bg-[#283AA0]/40 blur-3xl" />
-          <div className="absolute right-[-120px] top-[120px] h-[380px] w-[380px] rounded-full bg-[#283AA0]/35 blur-3xl" />
-          <div className="absolute bottom-[-140px] left-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-[#283AA0]/25 blur-3xl" />
-          <div className="absolute left-[10%] top-[40%] h-[240px] w-[240px] rounded-full bg-[#283AA0]/25 blur-3xl" />
-          <div className="absolute right-[12%] bottom-[18%] h-[240px] w-[240px] rounded-full bg-[#283AA0]/20 blur-3xl" />
+          <div className="absolute left-[-140px] top-[-100px] h-[420px] w-[420px] rounded-full bg-[#283AA0]/20 blur-3xl" />
+          <div className="absolute right-[-120px] top-[120px] h-[380px] w-[380px] rounded-full bg-[#283AA0]/15 blur-3xl" />
+          <div className="absolute bottom-[-140px] left-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-[#283AA0]/10 blur-3xl" />
+          <div className="absolute left-[10%] top-[40%] h-[240px] w-[240px] rounded-full bg-[#283AA0]/10 blur-3xl" />
+          <div className="absolute right-[12%] bottom-[18%] h-[240px] w-[240px] rounded-full bg-[#283AA0]/10 blur-3xl" />
         </div>
 
         <div className="mx-auto flex min-h-screen max-w-6xl flex-col px-6 py-8 sm:px-8">
@@ -88,7 +83,6 @@ export default function Home() {
             </p>
 
             <div className="relative mt-10">
-              {/* blue-only glow */}
               <div className="absolute inset-0 rounded-[3rem] bg-[linear-gradient(180deg,rgba(40,58,160,0.35),rgba(40,58,160,0.15))] blur-3xl" />
 
               <div className="relative mx-auto w-[300px] sm:w-[340px]">
@@ -106,7 +100,7 @@ export default function Home() {
             <div className="mt-10">
               <button
                 onClick={() => setIsWaitlistOpen(true)}
-                className="inline-flex min-w-[220px] items-center justify-center rounded-full bg-[linear-gradient(90deg,#05070f,#071021,#283AA0)] px-7 py-4 text-base font-semibold text-white shadow-lg transition hover:-translate-y-0.5"
+                className="inline-flex min-w-[220px] items-center justify-center rounded-full bg-[linear-gradient(90deg,#000000,#071021,#283AA0)] px-7 py-4 text-base font-semibold text-white shadow-lg transition hover:-translate-y-0.5"
               >
                 Join the Waitlist
               </button>
