@@ -57,11 +57,19 @@ export default function Home() {
         </div>
 
         <div className="mx-auto flex min-h-screen max-w-6xl flex-col px-6 py-8 sm:px-8">
+          
+          {/* 🔥 HEADER WITH LOGO */}
           <header className="flex justify-center text-center">
             <div className="max-w-2xl">
-              <div className="text-5xl font-bold tracking-tight sm:text-6xl">
-                Mutuals
-              </div>
+
+              <Image
+                src="/mutuals-logo.png"
+                alt="Mutuals"
+                width={260}
+                height={80}
+                priority
+                className="mx-auto h-auto w-[200px] sm:w-[260px]"
+              />
 
               <p className="mt-4 text-sm leading-6 text-white/80 sm:text-base">
                 The unified discovery and social platform for real world experiences.
