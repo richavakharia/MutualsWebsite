@@ -78,6 +78,9 @@ export default function Home() {
               Find your world.
             </h1>
 
+            <p className="mt-5 max-w-2xl text-base leading-7 text-white/80 sm:text-lg">
+              Discover and host experiences, meet new people, and experience your city.
+            </p>
 
             <div className="relative mt-10">
               <div className="absolute inset-0 rounded-[3rem] bg-[linear-gradient(180deg,rgba(40,58,160,0.35),rgba(40,58,160,0.15))] blur-3xl" />
