@@ -1,34 +1,28 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Playfair_Display, Instrument_Sans } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
   subsets: ["latin"],
+  weight: ["400","500","600","700","800","900"],
+  style: ["normal","italic"],
 });
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const instrumentSans = Instrument_Sans({
+  variable: "--font-instrument",
   subsets: ["latin"],
+  weight: ["400","500","600","700"],
 });
 
 export const metadata: Metadata = {
-  title: "Mutuals",
-  description: "The IRL social network built for real-world connection.",
+  title: "Mutuals — Discover Real-World Experiences",
+  description: "The IRL social network built for Gen Z. Discover events, host experiences, and connect with your city.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${playfair.variable} ${instrumentSans.variable} antialiased`}>{children}</body>
     </html>
   );
 }
