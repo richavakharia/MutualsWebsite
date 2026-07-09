@@ -94,7 +94,6 @@ body { background: var(--bg); color: var(--text); font-family: var(--font-body),
 .strip-outer { overflow:hidden; width:100%; }
 @keyframes scrollLeft { from{transform:translateX(0);} to{transform:translateX(-50%);} }
 .strip-inner { display:flex; gap:10px; animation:scrollLeft 40s linear infinite; width:max-content; }
-.strip-inner:hover { animation-play-state:paused; }
 .strip-photo { width:200px; height:260px; border-radius:16px; overflow:hidden; flex-shrink:0; }
 .strip-photo img { width:100%; height:100%; object-fit:cover; display:block; }
 
