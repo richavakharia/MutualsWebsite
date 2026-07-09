@@ -173,7 +173,7 @@ function ContactModal({ onClose }: { onClose: () => void }) {
 /* ─── Toggle Section (User / Host) ─── */
 function ToggleSection({ APP, bd, setContactOpen, AppleSVG }: {
   APP: string; bd: React.CSSProperties;
-  setContactOpen: (v: boolean) => void; AppleSVG: ({ s }: { s?: number }) => JSX.Element;
+  setContactOpen: (v: boolean) => void; AppleSVG: ({ s }: { s?: number }) => React.ReactElement;
 }) {
   const [tab, setTab] = useState<"user" | "host">("user");
   const isUser = tab === "user";
